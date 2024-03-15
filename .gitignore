@@ -1,0 +1,24 @@
+# Godot-specific
+*.import/
+*.imported/
+*.tscn.*
+*.tres.*
+
+*.backup/
+*.bak/
+
+*.csproj*
+*.sln*
+*.mono*
+*.msvc*
+*.pdb
+
+*.tmp
+*.pdb
+
+*.import.cfg
+
+.cache/
+logs/
+
+export/
