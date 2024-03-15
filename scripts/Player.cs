@@ -17,9 +17,9 @@ public partial class Player : CharacterBody2D
 		MoveAndSlide();	
 		
 		if (Velocity.Length() > 0) {
-			GetNode("HappyBoo").Call("play_walk_animation");
+			GetNode("./HappyBoo").Call("play_walk_animation");
 		} else {
-			GetNode("HappyBoo").Call("play_idle_animation");
+			GetNode("./HappyBoo").Call("play_idle_animation");
 		}
   }
 

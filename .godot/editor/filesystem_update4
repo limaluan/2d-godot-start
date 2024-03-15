@@ -3,3 +3,5 @@ res://player.cs
 res://scripts/player.cs
 res://scripts/Player.cs
 res://characters/happy_boo/happy_boo.gd
+res://survivors_game.tscn
+res://pine_tree.tscn
