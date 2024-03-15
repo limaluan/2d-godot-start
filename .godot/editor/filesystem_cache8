@@ -1,11 +1,11 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1710466676
+::res://::1710508261
 default_bus_layout.tres::AudioBusLayout::6564268947468103023::1695668179::0::1::::<><>::
 icon.png::CompressedTexture2D::621515402784007901::1695668179::1710455412::1::::<><>::
-mob.tscn::PackedScene::5823129427051977451::1710466615::0::1::::<><>::res://scripts/Mob.cs<>uid://ogik4s70pgwl::::res://characters/slime/slime.tscn
+mob.tscn::PackedScene::5823129427051977451::1710498270::0::1::::<><>::res://scripts/Mob.cs<>uid://ogik4s70pgwl::::res://characters/slime/slime.tscn
 pine_tree.tscn::PackedScene::2685856841348198610::1710466183::0::1::::<><>::uid://b7rhtttevhxtj::::res://characters/ground_shadow.png<>uid://caqfk2xng5v5u::::res://trees/pine_tree.png
-player.tscn::PackedScene::7203879319896594541::1710466496::0::1::::<><>::res://scripts/Player.cs<>uid://pbmyh1qru7p::::res://characters/happy_boo/happy_boo.tscn
-survivors_game.tscn::PackedScene::1836306346166332037::1710466496::0::1::::<><>::uid://davu3s6m7dvfx::::res://player.tscn<>uid://bejbw1itvwn3g::::res://pine_tree.tscn<>uid://co71ddcqrk0t8::::res://mob.tscn
+player.tscn::PackedScene::7203879319896594541::1710498270::0::1::::<><>::res://scripts/Player.cs<>uid://pbmyh1qru7p::::res://characters/happy_boo/happy_boo.tscn
+survivors_game.tscn::PackedScene::1836306346166332037::1710498270::0::1::::<><>::uid://davu3s6m7dvfx::::res://player.tscn<>uid://bejbw1itvwn3g::::res://pine_tree.tscn<>uid://co71ddcqrk0t8::::res://mob.tscn
 ::res://addons/::1695668179
 ::res://addons/colorpicker_presets/::1695668179
 colorpicker_presets.gd::GDScript::-1::1695668179::0::1::::<>EditorPlugin<>::
@@ -42,8 +42,8 @@ muzzle_flash.gd::GDScript::-1::1695668179::0::1::::<>Node2D<>::
 muzzle_flash.png::CompressedTexture2D::3592944556550980239::1695668179::1710455412::1::::<><>::
 muzzle_flash.tscn::PackedScene::6601472980654318439::1695668179::0::1::::<><>::res://pistol/muzzle_flash/muzzle_flash.gd<>uid://brgpjilf7s2ul::::res://pistol/muzzle_flash/muzzle_flash.png
 ::res://scripts/::1710464408
-Mob.cs::CSharpScript::-1::1710466648::0::1::::<>CharacterBody2D<>::
-Player.cs::CSharpScript::-1::1710466043::0::1::::<>CharacterBody2D<>::
+Mob.cs::CSharpScript::-1::1710467465::0::1::::<>CharacterBody2D<>::
+Player.cs::CSharpScript::-1::1710466982::0::1::::<>CharacterBody2D<>::
 ::res://smoke_explosion/::1710455412
 circle_32.png::CompressedTexture2D::6271663262871881894::1695668179::1710455412::1::::<><>::
 smoke_explosion.gd::GDScript::-1::1695668179::0::1::::<>Node2D<>::

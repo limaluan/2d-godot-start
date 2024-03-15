@@ -3,3 +3,6 @@ res://survivors_game.tscn
 res://mob.tscn
 res://scripts/Mob.cs
 res://scripts/Player.cs
+res://scripts/CanvasLayer.cs
+res://gun.tscn
+res://scripts/gun.cs

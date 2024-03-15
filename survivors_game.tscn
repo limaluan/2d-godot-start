@@ -7,39 +7,44 @@
 [node name="Game" type="Node2D"]
 y_sort_enabled = true
 
-[node name="ColorRect" type="ColorRect" parent="."]
-offset_right = 2169.0
-offset_bottom = 1420.0
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = -10
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
+offset_left = -184.0
+offset_top = -146.0
+offset_right = 1492.0
+offset_bottom = 808.0
 
 [node name="Player" parent="." instance=ExtResource("1_wkkj5")]
-position = Vector2(548, 420)
+position = Vector2(576, 325)
 
 [node name="PineTree" parent="." instance=ExtResource("2_muh4x")]
 position = Vector2(443, 187)
 
 [node name="PineTree2" parent="." instance=ExtResource("2_muh4x")]
-position = Vector2(1572, 1108)
+position = Vector2(1455, 877)
 
 [node name="PineTree3" parent="." instance=ExtResource("2_muh4x")]
 position = Vector2(829, 396)
 
 [node name="PineTree6" parent="." instance=ExtResource("2_muh4x")]
-position = Vector2(1492, 1074)
+position = Vector2(1375, 843)
 
 [node name="PineTree4" parent="." instance=ExtResource("2_muh4x")]
 position = Vector2(247, 598)
 
 [node name="PineTree5" parent="." instance=ExtResource("2_muh4x")]
-position = Vector2(1500, 1142)
+position = Vector2(1383, 911)
 
 [node name="Mob" parent="." instance=ExtResource("3_fke1n")]
 position = Vector2(737, 526)
+speed = 200
 
 [node name="Mob2" parent="." instance=ExtResource("3_fke1n")]
 position = Vector2(1274, 362)
-
-[node name="Mob3" parent="." instance=ExtResource("3_fke1n")]
-position = Vector2(736, 142)
+speed = 200
 
 [node name="Mob4" parent="." instance=ExtResource("3_fke1n")]
 position = Vector2(225, 414)
+speed = 200
