@@ -25,8 +25,8 @@ public partial class Bullet : Area2D
 	{
 		QueueFree();
 
-		if (body.HasMethod("takeDamage")) {
-			body.Call("takeDamage");
+		if (body.HasMethod("TakeDamage")) {
+			body.Call("TakeDamage");
 		}
 	}
 }

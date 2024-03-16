@@ -1,9 +1,9 @@
 res://scripts/Bullet.cs
-res://scripts/gun.cs
+res://scripts/Gun.cs
 res://scripts/Mob.cs
 res://scripts/Player.cs
-res://survivors_game.tscn
 res://gun.tscn
+res://survivors_game.tscn
 res://player.tscn
 res://mob.tscn
 res://characters/slime/slime.tscn
