@@ -1,10 +1,10 @@
+res://survivors_game.tscn
+res://gun.tscn
+res://player.tscn
+res://characters/slime/slime.tscn
+res://bullet.tscn
+res://mob.tscn
 res://scripts/Bullet.cs
 res://scripts/Gun.cs
 res://scripts/Mob.cs
 res://scripts/Player.cs
-res://gun.tscn
-res://survivors_game.tscn
-res://player.tscn
-res://mob.tscn
-res://characters/slime/slime.tscn
-res://bullet.tscn

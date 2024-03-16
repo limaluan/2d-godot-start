@@ -6,6 +6,7 @@ public partial class Gun : Area2D
 
   private PackedScene _bullet;
   private Marker2D _shootingPoint;
+  private Godot.Collections.Array<Node2D> enemiesInRange;
 
   public override void _Ready()
   {
@@ -15,7 +16,7 @@ public partial class Gun : Area2D
 
   public override void _PhysicsProcess(double delta)
   {
-    var enemiesInRange = GetOverlappingBodies();
+    enemiesInRange = GetOverlappingBodies();
 
     if (enemiesInRange.Count > 0)
     {
@@ -31,7 +32,11 @@ public partial class Gun : Area2D
     _shootingPoint.AddChild(newBullet);
   }
 
-  public void OnTimerTimeOut() {
-    Shoot();
+  public void OnTimerTimeOut()
+  {
+    if (enemiesInRange.Count > 0)
+    {
+      Shoot();
+    }
   }
 }
