@@ -3,6 +3,7 @@
 *.imported/
 *.tscn.*
 *.tres.*
+*.godot/*
 
 *.backup/
 *.bak/

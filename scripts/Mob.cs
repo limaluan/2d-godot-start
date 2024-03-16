@@ -4,7 +4,6 @@ using System;
 namespace Mob {
   public partial class Mob : CharacterBody2D
   {
-
     private Node2D player;
 
     [Export]

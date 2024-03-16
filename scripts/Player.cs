@@ -7,7 +7,7 @@ namespace Player {
 		[Export]
 		public int speed { get; set; } = 400;
 		
-		private void GetInput() {
+		public void GetInput() {
 			Vector2 inputDirection = Input.GetVector("move_left", "move_right", "move_up", "move_down");
 			Velocity = inputDirection * speed;
 		}

@@ -1,8 +1,10 @@
-res://player.tscn
-res://survivors_game.tscn
-res://mob.tscn
+res://scripts/Bullet.cs
+res://scripts/gun.cs
 res://scripts/Mob.cs
 res://scripts/Player.cs
-res://scripts/CanvasLayer.cs
+res://survivors_game.tscn
 res://gun.tscn
-res://scripts/gun.cs
+res://player.tscn
+res://mob.tscn
+res://characters/slime/slime.tscn
+res://bullet.tscn
