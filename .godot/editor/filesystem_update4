@@ -8,3 +8,6 @@ res://scripts/Bullet.cs
 res://scripts/Gun.cs
 res://scripts/Mob.cs
 res://scripts/Player.cs
+res://scripts/SlimeMob.cs
+res://scripts/survivors_game.cs
+res://scripts/Survivors_game.cs
