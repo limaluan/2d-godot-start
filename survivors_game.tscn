@@ -1,8 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://1frxyacojkk8"]
+[gd_scene load_steps=4 format=3 uid="uid://1frxyacojkk8"]
 
 [ext_resource type="Script" path="res://scripts/Survivors_game.cs" id="1_armhb"]
 [ext_resource type="PackedScene" uid="uid://davu3s6m7dvfx" path="res://player.tscn" id="1_wkkj5"]
-[ext_resource type="PackedScene" uid="uid://bejbw1itvwn3g" path="res://pine_tree.tscn" id="2_muh4x"]
 
 [sub_resource type="Curve2D" id="Curve2D_veukc"]
 _data = {
@@ -14,10 +13,10 @@ point_count = 6
 y_sort_enabled = true
 script = ExtResource("1_armhb")
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
+[node name="Floor" type="CanvasLayer" parent="."]
 layer = -10
 
-[node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
+[node name="ColorRect" type="ColorRect" parent="Floor"]
 offset_left = -184.0
 offset_top = -146.0
 offset_right = 1492.0
@@ -35,26 +34,13 @@ unique_name_in_owner = true
 position = Vector2(-317, -253)
 rotation = -0.0035425
 
-[node name="PineTree" parent="." instance=ExtResource("2_muh4x")]
-position = Vector2(443, 187)
-
-[node name="PineTree2" parent="." instance=ExtResource("2_muh4x")]
-position = Vector2(1455, 877)
-
-[node name="PineTree3" parent="." instance=ExtResource("2_muh4x")]
-position = Vector2(829, 396)
-
-[node name="PineTree6" parent="." instance=ExtResource("2_muh4x")]
-position = Vector2(1375, 843)
-
-[node name="PineTree4" parent="." instance=ExtResource("2_muh4x")]
-position = Vector2(247, 598)
-
-[node name="PineTree5" parent="." instance=ExtResource("2_muh4x")]
-position = Vector2(1383, 911)
-
-[node name="Timer" type="Timer" parent="."]
-wait_time = 0.5
+[node name="TimerSpawnSlime" type="Timer" parent="."]
 autostart = true
 
-[connection signal="timeout" from="Timer" to="." method="OnTimerSpawnSlimeTimeOut"]
+[node name="TimerSpawnTrees" type="Timer" parent="."]
+wait_time = 1.5
+autostart = true
+
+[connection signal="HealthDepleted" from="Player" to="." method="OnPlayerHealthDepleted"]
+[connection signal="timeout" from="TimerSpawnSlime" to="." method="OnTimerSpawnSlimeTimeOut"]
+[connection signal="timeout" from="TimerSpawnTrees" to="." method="OnTimerSpawnTreeTimeOut"]
